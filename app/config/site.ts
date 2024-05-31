@@ -1,4 +1,4 @@
-import { Chain } from "viem/chains";
+import { Chain, polygon, sepolia, telos } from "viem/chains";
 
 export type SiteConfig = typeof siteConfig;
 
@@ -21,13 +21,16 @@ export const siteConfig = {
   },
   contracts: [
     {
-      chain: { id: 56, name: "Binance Smart Chain" },
+      // chain: { id: 56, name: "Binance Smart Chain" },
+      chain: sepolia,
     },
     {
-      chain: { id: 23888, name: "Telos" },
+      // chain: { id: 23888, name: "Telos" },
+      chain: telos,
     },
     {
-      chain: { id: 137, name: "Polygon" },
+      // chain: { id: 137, name: "Polygon" },
+      chain: polygon,
     }
   ]
 };

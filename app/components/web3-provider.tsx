@@ -5,10 +5,13 @@ import { PrivyProvider, type PrivyClientConfig } from "@privy-io/react-auth";
 import { WagmiProvider, createConfig } from "@privy-io/wagmi";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { http } from "viem";
+import { sepolia } from "viem/chains";
 
 const supportedChains = Object.values(siteConfig.contracts).map(
   (contracts) => contracts.chain
 );
+
+console.log(supportedChains)
 
 const privyConfig: PrivyClientConfig = {
   embeddedWallets: {
@@ -18,10 +21,12 @@ const privyConfig: PrivyClientConfig = {
   loginMethods: ["wallet", "google", "email"],
   appearance: {
     showWalletLoginFirst: true,
+    walletList: ["metamask", "rainbow"]
   },
   supportedChains: supportedChains,
   defaultChain: supportedChains[0],
 };
+
 
 const wagmiTransports = supportedChains.reduce(
   (prevoiusValue, chain) =>
@@ -40,7 +45,7 @@ const queryClient = new QueryClient();
 export function Web3Provider({ children }: { children: React.ReactNode }) {
   return (
     <PrivyProvider
-      appId={process.env.NEXT_PUBLIC_PRIVY_APP_ID as string}
+      appId="clwuu983y0171qbzn26w0bpui"
       config={privyConfig}
     >
       <QueryClientProvider client={queryClient}>
