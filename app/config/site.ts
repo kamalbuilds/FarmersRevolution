@@ -17,7 +17,7 @@ export const siteConfig = {
   name: "FarmersRevolution",
   description: "Dapp that connects farmers with the right investors through the tokenization of their real-world assets (RWAs) like crops and farm products",
   links: {
-    github: "https://github.com/kamalbuilds/FarmersRevolution",
+    github: "https://github.com/kamalbuilds/2024",
   },
   contracts: [
     {
