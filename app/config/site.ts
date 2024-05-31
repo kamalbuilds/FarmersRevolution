@@ -19,4 +19,16 @@ export const siteConfig = {
   links: {
     github: "https://github.com/kamalbuilds/FarmersRevolution",
   },
+  contracts: [
+    {
+      chain: { id: 56, name: "Binance Smart Chain" },
+    },
+    {
+      chain: { id: 23888, name: "Telos" },
+    },
+    {
+      chain: { id: 137, name: "Polygon" },
+    }
+  ]
 };
+
