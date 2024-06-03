@@ -19,3 +19,5 @@ By integrating smart contracts and decentralized finance (DeFi) protocols, the d
 
 ### Global Accessibility
 A blockchain-based dapp can transcend geographical boundaries, allowing farmers and investors from around the world to connect and collaborate. This expands the potential market and fosters a more inclusive global agricultural ecosystem.
+
+## ChainLink Protocols Usage in the Project
